@@ -28,15 +28,14 @@ public class MoveObject : MonoBehaviour
                 offset = selectedObject.transform.position - mousePosition;
             }
         }
+
         if (selectedObject)
         {
             Vector3 pos = mousePosition + offset;
             float limitMove = selectedObject.GetComponent<Config>().limitMove;
-            // float distance = Vector2.Distance(pos, cross_bow.transform.position);
             float newX = Mathf.Clamp(pos.x, cross_bow.transform.position.x - limitMove, cross_bow.transform.position.x + limitMove);
             float newY = Mathf.Clamp(pos.y, cross_bow.transform.position.y - limitMove, cross_bow.transform.position.y + limitMove);
             selectedObject.transform.position = new Vector3(newX, newY, pos.z);
-
         }
 
         if (Input.GetMouseButtonUp(0) && selectedObject)
