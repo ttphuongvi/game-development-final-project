@@ -40,7 +40,7 @@ public class MoveObject : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && selectedObject)
         {
-            selectedObject.GetComponent<Bird>().Thrown();
+            // selectedObject.GetComponent<Bird>().Thrown();
             selectedObject = null;
         }
     }
