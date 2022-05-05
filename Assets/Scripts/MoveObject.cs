@@ -32,14 +32,15 @@ public class MoveObject : MonoBehaviour
         if (selectedObject)
         {
             Vector3 pos = mousePosition + offset;
-            float limitMove = selectedObject.GetComponent<Config>().limitMove;
-            float newX = Mathf.Clamp(pos.x, cross_bow.transform.position.x - limitMove, cross_bow.transform.position.x + limitMove);
-            float newY = Mathf.Clamp(pos.y, cross_bow.transform.position.y - limitMove, cross_bow.transform.position.y + limitMove);
+            Vector2 limitMove = selectedObject.GetComponent<Bird>().limitMove;
+            float newX = Mathf.Clamp(pos.x, cross_bow.transform.position.x - limitMove.x, cross_bow.transform.position.x + limitMove.x);
+            float newY = Mathf.Clamp(pos.y, cross_bow.transform.position.y - limitMove.y, cross_bow.transform.position.y + limitMove.y);
             selectedObject.transform.position = new Vector3(newX, newY, pos.z);
         }
 
         if (Input.GetMouseButtonUp(0) && selectedObject)
         {
+            selectedObject.GetComponent<Bird>().Thrown();
             selectedObject = null;
         }
     }
