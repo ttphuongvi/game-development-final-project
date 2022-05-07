@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5104383866817012530}
   - component: {fileID: -4933171376228417414}
   m_Layer: 0
-  m_Name: red
+  m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: be386b422719cf240a911b5a8b014132, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -136,3 +136,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 1
   limitMove: {x: 3, y: 1.5}
+  MinVelocity: 0.05

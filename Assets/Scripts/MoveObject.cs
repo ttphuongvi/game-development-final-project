@@ -23,7 +23,7 @@ public class MoveObject : MonoBehaviour
         {
             Collider2D targetObject = Physics2D.OverlapPoint(mousePosition);
             if (targetObject)
-            {
+            {   
                 selectedObject = targetObject.transform.gameObject; // red
                 offset = selectedObject.transform.position - mousePosition;
             }
