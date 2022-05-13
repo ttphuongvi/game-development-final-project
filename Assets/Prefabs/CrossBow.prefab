@@ -52,7 +52,7 @@ MonoBehaviour:
   RightCrossBow: {fileID: 3436818615648941686}
   MainCrossBow: {fileID: 7054201930669379901}
   Line: {fileID: 8498679184612542357}
-  TrajectoryLineRenderer: {fileID: 0}
+  TrajectoryLineRenderer: {fileID: 6296531230800644284}
   SelectedBird: {fileID: 0}
   middle: {x: 0, y: 0, z: 0}
   localLeft: {x: 0, y: 0, z: 0}

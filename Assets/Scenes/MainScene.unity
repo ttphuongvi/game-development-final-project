@@ -302,7 +302,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5224075438547248241, guid: e9cd0a3c9a048cf499e71c487ac93836, type: 3}
       propertyPath: ThrowSpeed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -5224075438547248241, guid: e9cd0a3c9a048cf499e71c487ac93836, type: 3}
       propertyPath: SelectedBird
