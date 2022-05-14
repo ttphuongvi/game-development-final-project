@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -236,6 +237,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8c2e092fb9868946bfabb5df63c9ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsFollowing: 0
+  BirdToFollow: {fileID: 422301236}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -393,10 +408,6 @@ PrefabInstance:
       value: -2.34
       objectReference: {fileID: 0}
     - target: {fileID: 8498679184612542357, guid: e9cd0a3c9a048cf499e71c487ac93836, type: 3}
-      propertyPath: m_SortingOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8498679184612542357, guid: e9cd0a3c9a048cf499e71c487ac93836, type: 3}
       propertyPath: m_Positions.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -423,7 +434,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5104383866817012530, guid: 4d6a63043a68a404e8a10bce3a95a165, type: 3}
       propertyPath: m_Mass
-      value: 0.51027364
+      value: 0.19404571
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104383866817012530, guid: 4d6a63043a68a404e8a10bce3a95a165, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8023854306486032744, guid: 4d6a63043a68a404e8a10bce3a95a165, type: 3}
       propertyPath: m_Name
