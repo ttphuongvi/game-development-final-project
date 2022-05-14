@@ -17,7 +17,7 @@ public class CrossBow : MonoBehaviour
     public GameObject RightCrossBow;
     public GameObject MainCrossBow;
     public LineRenderer Line;
-    public GameObject TrajectoryLineRenderer;
+    public LineRenderer TrajectoryLineRenderer;
 
     public GameObject SelectedBird;
     [HideInInspector]
@@ -34,8 +34,8 @@ public class CrossBow : MonoBehaviour
         CrossBowState = CrossBowStateEnum.Idle;
 
         Line.positionCount = 3;
-        localLeft = (LeftCrossBow.transform.position - this.transform.position) / 20 * 100;
-        localRight = (RightCrossBow.transform.position - this.transform.position) / 20 * 100;
+        localLeft = (LeftCrossBow.transform.position - this.transform.position) / this.transform.localScale.x;
+        localRight = (RightCrossBow.transform.position - this.transform.position) / this.transform.localScale.x;
         middle = (localLeft + localRight) / 2;
         realMiddle = (LeftCrossBow.transform.position + RightCrossBow.transform.position) / 2;
     }
@@ -69,6 +69,9 @@ public class CrossBow : MonoBehaviour
                     float newX = Mathf.Clamp(pos.x, realMiddle.x - limitMove.x, realMiddle.x + limitMove.x);
                     float newY = Mathf.Clamp(pos.y, realMiddle.y - limitMove.y, realMiddle.y + limitMove.y);
                     SelectedBird.transform.position = new Vector3(newX, newY, pos.z);
+
+                    float distance = Vector3.Distance(realMiddle, SelectedBird.transform.position);
+                    DisplayTrajectoryLineRenderer(distance);
                 }
 
                 if (Input.GetMouseButtonUp(0) && SelectedBird)
@@ -86,7 +89,7 @@ public class CrossBow : MonoBehaviour
         Line.SetPosition(0, localLeft);
         if (SelectedBird && SelectedBird.GetComponent<Bird>().State == Bird.BirdState.BeforeThrown)
         {
-            Line.SetPosition(1, (SelectedBird.transform.position - this.transform.position) / 20 * 100);
+            Line.SetPosition(1, (SelectedBird.transform.position - this.transform.position) / this.transform.localScale.x);
         }
         else
         {
@@ -100,16 +103,45 @@ public class CrossBow : MonoBehaviour
         //get velocity
         Vector3 velocity = realMiddle - SelectedBird.transform.position;
         SelectedBird.GetComponent<Bird>().Thrown(); //make the bird aware of it
-        //old and alternative way
-        //BirdToThrow.GetComponent<Rigidbody2D>().AddForce
-        //    (new Vector2(v2.x, v2.y) * ThrowSpeed * distance * 300 * Time.deltaTime);
-        //set the velocity
-        SelectedBird.GetComponent<Rigidbody2D>().velocity = new Vector2(velocity.x, velocity.y) * ThrowSpeed * distance;
-
+        SelectedBird.GetComponent<Rigidbody2D>().velocity = velocity * ThrowSpeed * distance;
 
         //notify interested parties that the bird was thrown
         if (BirdThrown != null)
             BirdThrown(this, EventArgs.Empty);
     }
     public event EventHandler BirdThrown;
+
+    public void DisplayTrajectoryLineRenderer(float distance)
+    {
+        // SetTrajectoryLineRenderesActive(true);
+        Vector2 velocity = realMiddle - SelectedBird.transform.position;
+        int segmentCount = 15;
+        float segmentScale = 2;
+        Vector2[] segments = new Vector2[segmentCount];
+
+        // The first line point is wherever the player's cannon, etc is
+        segments[0] = SelectedBird.transform.position;
+
+        // The initial velocity
+        Vector2 segVelocity = velocity * ThrowSpeed * distance;
+
+        float angle = Vector2.Angle(segVelocity, new Vector2(1, 0));
+        float time = segmentScale / segVelocity.magnitude;
+        for (int i = 1; i < segmentCount; i++)
+        {
+            //x axis: spaceX = initialSpaceX + velocityX * time
+            //y axis: spaceY = initialSpaceY + velocityY * time + 1/2 * accelerationY * time ^ 2
+            //both (vector) space = initialSpace + velocity * time + 1/2 * acceleration * time ^ 2
+            float time2 = i * Time.fixedDeltaTime * 5;
+            segments[i] = segments[0] + segVelocity * time2 + 0.5f * Physics2D.gravity * Mathf.Pow(time2, 2);
+        }
+
+        TrajectoryLineRenderer.positionCount = segmentCount;
+        for (int i = 0; i < segmentCount; i++)
+        {
+            Vector2 v2position = this.transform.position;
+            TrajectoryLineRenderer.SetPosition(i, (segments[i] - v2position) / this.transform.localScale.x);
+
+        }
+    }
 }
