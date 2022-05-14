@@ -33,7 +33,7 @@ public class Bird : MonoBehaviour
         if (State == BirdState.Thrown && GetComponent<Rigidbody2D>().velocity.sqrMagnitude <= MinVelocity)
         {
             //destroy the bird after 2 seconds
-            StartCoroutine(DestroyAfter(2));
+            // StartCoroutine(DestroyAfter(2));
         }
     }
 
