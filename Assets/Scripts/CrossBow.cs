@@ -28,6 +28,9 @@ public class CrossBow : MonoBehaviour
     [HideInInspector]
     public CrossBowStateEnum CrossBowState;
 
+    // Audio
+    public GameObject Shot, Stretched;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +57,8 @@ public class CrossBow : MonoBehaviour
                     if (targetObject && targetObject == SelectedBird.GetComponent<CircleCollider2D>())
                     {
                         CrossBowState = CrossBowStateEnum.UserPulling;
+                        // Bật tiếng kéo
+                        Stretched.GetComponent<AudioSource>().Play();
                         offset = SelectedBird.transform.position - mousePosition;
                     }
                 }
@@ -77,6 +82,7 @@ public class CrossBow : MonoBehaviour
                 if (Input.GetMouseButtonUp(0) && SelectedBird)
                 {
                     // Ném chuột khi người dùng thả
+                    Shot.GetComponent<AudioSource>().Play();
                     float distance = Vector3.Distance(realMiddle, SelectedBird.transform.position);
                     CrossBowState = CrossBowStateEnum.BirdFlying;
                     ThrowBird(distance);
