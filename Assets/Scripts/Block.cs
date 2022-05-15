@@ -25,7 +25,7 @@ public class Block : MonoBehaviour
 
     public void ChangeAudioClipDamgeRandom() {
         audioSource.clip = audioClipDamge[Random.Range(0, audioClipDamge.Length)];
-        Debug.Log(audioClipDamge.Length);
+        // Debug.Log(audioClipDamge.Length);
     }
 
     public void ChangeAudioClipDestroyRandom() {
@@ -37,7 +37,7 @@ public class Block : MonoBehaviour
         if (col.gameObject.GetComponent<Rigidbody2D>() == null) return;
 
         // Tính damage, detroy nếu hết máu
-        float damage = col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * 10;
+        float damage = col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * 100;
         float oldHealth = health;
         health -= damage;
         if (health <= 0) {
@@ -45,7 +45,7 @@ public class Block : MonoBehaviour
             audioSource.Play();
             Destroy(this.gameObject);
         }
-        // Debug.Log(damage);
+        Debug.Log(damage);
 
         // Check máu chuyển đổi Sprite
 
