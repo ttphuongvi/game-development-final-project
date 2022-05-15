@@ -8,10 +8,28 @@ public class Block : MonoBehaviour
     [HideInInspector]
     public float health;
     public Sprite[] spriteArray;
+    
+    //Audio 
+    public AudioClip[] audioClipCollision, audioClipDamge, audioClipDestroy;
+    [HideInInspector]
+    public AudioSource audioSource;
 
     public void changeSprite(int index)
     {
         GetComponent<SpriteRenderer>().sprite = spriteArray[index];
+    }
+
+    public void ChangeAudioClipCollisionRandom() {
+        audioSource.clip = audioClipCollision[Random.Range(0, audioClipCollision.Length)];
+    }
+
+    public void ChangeAudioClipDamgeRandom() {
+        audioSource.clip = audioClipDamge[Random.Range(0, audioClipDamge.Length)];
+        Debug.Log(audioClipDamge.Length);
+    }
+
+    public void ChangeAudioClipDestroyRandom() {
+        audioSource.clip = audioClipDestroy[Random.Range(0, audioClipDestroy.Length)];
     }
 
     void OnCollisionEnter2D(Collision2D col) {
@@ -20,26 +38,35 @@ public class Block : MonoBehaviour
 
         // Tính damage, detroy nếu hết máu
         float damage = col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * 10;
+        float oldHealth = health;
         health -= damage;
-        if (health <= 0) Destroy(this.gameObject);
-        Debug.Log(damage);
+        if (health <= 0) {
+            ChangeAudioClipDestroyRandom();
+            audioSource.Play();
+            Destroy(this.gameObject);
+        }
+        // Debug.Log(damage);
 
         // Check máu chuyển đổi Sprite
-        if (health >= maxHeath * 0.75f)
-        {
-            changeSprite(0);
+
+        if (health <= maxHeath * 0.25f && oldHealth > maxHeath * 0.25f) {
+            ChangeAudioClipDamgeRandom();
+            audioSource.Play();
+            changeSprite(3);
         }
-        else if (health >= maxHeath * 0.5f)
-        {
-            changeSprite(1);
-        }
-        else if (health >= maxHeath * 0.25f)
-        {
+        else if (health <= maxHeath * 0.5f && oldHealth > maxHeath * 0.5f) {
+            ChangeAudioClipDamgeRandom();
+            audioSource.Play();
             changeSprite(2);
         }
-        else
-        {
-            changeSprite(3);
+        else if (health <= maxHeath * 0.75f && oldHealth > maxHeath * 0.75f) {
+            ChangeAudioClipDamgeRandom();
+            audioSource.Play();
+            changeSprite(1);
+        }
+        else {
+            ChangeAudioClipCollisionRandom();
+            audioSource.Play();
         }
 
     }
@@ -48,6 +75,7 @@ public class Block : MonoBehaviour
     void Start()
     {
         health = maxHeath;
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     // Update is called once per frame
