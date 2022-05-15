@@ -225,6 +225,10 @@ PrefabInstance:
       propertyPath: SelectedBird
       value: 
       objectReference: {fileID: 422301236}
+    - target: {fileID: -5224075438547248241, guid: e9cd0a3c9a048cf499e71c487ac93836, type: 3}
+      propertyPath: offsetTrajectory
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1304005971127838696, guid: e9cd0a3c9a048cf499e71c487ac93836, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.25
