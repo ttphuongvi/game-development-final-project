@@ -7,13 +7,13 @@ TextureImporter:
     second: INGAME_BLOCKS_WOOD_1_0
   - first:
       213: 21300002
-    second: INGAME_BLOCKS_WOOD_1_1
+    second: INGAME_BLOCKS_WOOD_1_121
   - first:
       213: 21300004
-    second: INGAME_BLOCKS_WOOD_1_2
+    second: INGAME_BLOCKS_WOOD_1_232323
   - first:
       213: 21300006
-    second: INGAME_BLOCKS_WOOD_1_3
+    second: INGAME_BLOCKS_WOOD_1_3333
   - first:
       213: 21300008
     second: INGAME_BLOCKS_WOOD_1_4
@@ -85,13 +85,13 @@ TextureImporter:
     second: INGAME_BLOCKS_WOOD_1_26
   - first:
       213: 21300054
-    second: INGAME_BLOCKS_WOOD_1_27
+    second: INGAME_BLOCKS_WOOD_1_1
   - first:
       213: 21300056
-    second: INGAME_BLOCKS_WOOD_1_28
+    second: INGAME_BLOCKS_WOOD_1_2
   - first:
       213: 21300058
-    second: INGAME_BLOCKS_WOOD_1_29
+    second: INGAME_BLOCKS_WOOD_1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -190,7 +190,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: INGAME_BLOCKS_WOOD_1_1
+      name: INGAME_BLOCKS_WOOD_1_121
       rect:
         serializedVersion: 2
         x: 84
@@ -211,11 +211,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: INGAME_BLOCKS_WOOD_1_2
+      name: INGAME_BLOCKS_WOOD_1_232323
       rect:
         serializedVersion: 2
-        x: 337
-        y: 333
+        x: 336
+        y: 334
         width: 83
         height: 83
       alignment: 0
@@ -232,7 +232,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: INGAME_BLOCKS_WOOD_1_3
+      name: INGAME_BLOCKS_WOOD_1_3333
       rect:
         serializedVersion: 2
         x: 421
@@ -736,7 +736,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: INGAME_BLOCKS_WOOD_1_27
+      name: INGAME_BLOCKS_WOOD_1_1
       rect:
         serializedVersion: 2
         x: 0
@@ -757,7 +757,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: INGAME_BLOCKS_WOOD_1_28
+      name: INGAME_BLOCKS_WOOD_1_2
       rect:
         serializedVersion: 2
         x: 0
@@ -778,11 +778,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: INGAME_BLOCKS_WOOD_1_29
+      name: INGAME_BLOCKS_WOOD_1_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 81
+        y: 80
         width: 84
         height: 85
       alignment: 0

@@ -334,14 +334,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5104383866817012530, guid: 4d6a63043a68a404e8a10bce3a95a165, type: 3}
-      propertyPath: m_Mass
-      value: 0.19404571
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104383866817012530, guid: 4d6a63043a68a404e8a10bce3a95a165, type: 3}
-      propertyPath: m_UseAutoMass
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8023854306486032744, guid: 4d6a63043a68a404e8a10bce3a95a165, type: 3}
       propertyPath: m_Name
       value: Red
@@ -398,6 +390,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8023854306486032749, guid: 4d6a63043a68a404e8a10bce3a95a165, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 7703fafc515bb8e4ca911285a36debbc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6a63043a68a404e8a10bce3a95a165, type: 3}
 --- !u!1 &1047371587

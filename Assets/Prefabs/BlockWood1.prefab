@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2026631931411372423}
   - component: {fileID: 202041598996175844}
   - component: {fileID: 1727585385935629345}
+  - component: {fileID: 4779032169182828423}
   m_Layer: 0
   m_Name: BlockWood1
   m_TagString: Untagged
@@ -131,3 +132,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4779032169182828423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967405718730191752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0185160fa7ad0b4397abeb6b6519d50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heath: 100
