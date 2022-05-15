@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
+    public float maxHeath;
+    [HideInInspector]
     public float health;
 
     void OnCollisionEnter2D(Collision2D col) {
@@ -17,7 +19,7 @@ public class Block : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = maxHeath;
     }
 
     // Update is called once per frame

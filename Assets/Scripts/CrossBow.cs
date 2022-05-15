@@ -31,15 +31,15 @@ public class CrossBow : MonoBehaviour
     // Audio
     public GameObject Shot, Stretched;
 
+
+    public float offsetTrajectory;
+
     // Start is called before the first frame update
     void Start()
     {
         CrossBowState = CrossBowStateEnum.Idle;
 
         Line.positionCount = 3;
-        localLeft = (LeftCrossBow.transform.position - this.transform.position) / this.transform.localScale.x;
-        localRight = (RightCrossBow.transform.position - this.transform.position) / this.transform.localScale.x;
-        middle = (localLeft + localRight) / 2;
         realMiddle = (LeftCrossBow.transform.position + RightCrossBow.transform.position) / 2;
     }
 
@@ -92,16 +92,16 @@ public class CrossBow : MonoBehaviour
                 break;
         }
 
-        Line.SetPosition(0, localLeft);
+        Line.SetPosition(0, LeftCrossBow.transform.position);
         if (SelectedBird && SelectedBird.GetComponent<Bird>().State == Bird.BirdState.BeforeThrown)
         {
-            Line.SetPosition(1, (SelectedBird.transform.position - this.transform.position) / this.transform.localScale.x);
+            Line.SetPosition(1, SelectedBird.transform.position);
         }
         else
         {
-            Line.SetPosition(1, middle);
+            Line.SetPosition(1, realMiddle);
         }
-        Line.SetPosition(2, localRight);
+        Line.SetPosition(2, RightCrossBow.transform.position);
     }
 
     private void ThrowBird(float distance)
@@ -110,7 +110,7 @@ public class CrossBow : MonoBehaviour
         Vector3 velocity = realMiddle - SelectedBird.transform.position;
         SelectedBird.GetComponent<Bird>().Thrown(); //make the bird aware of it
         SelectedBird.GetComponent<Rigidbody2D>().velocity = velocity * ThrowSpeed * distance;
-
+        // SelectedBird.GetComponent<Rigidbody2D>().AddForce(velocity * ThrowSpeed * distance * 300 * Time.deltaTime);
         //notify interested parties that the bird was thrown
         if (BirdThrown != null)
             BirdThrown(this, EventArgs.Empty);
@@ -121,9 +121,10 @@ public class CrossBow : MonoBehaviour
     {
         // SetTrajectoryLineRenderesActive(true);
         Vector2 velocity = realMiddle - SelectedBird.transform.position;
-        int segmentCount = 15;
+        int maxSegmentCount = 15;
+        int segmentCount = 0;
         float segmentScale = 2;
-        Vector2[] segments = new Vector2[segmentCount];
+        Vector2[] segments = new Vector2[maxSegmentCount];
 
         // The first line point is wherever the player's cannon, etc is
         segments[0] = SelectedBird.transform.position;
@@ -133,20 +134,29 @@ public class CrossBow : MonoBehaviour
 
         float angle = Vector2.Angle(segVelocity, new Vector2(1, 0));
         float time = segmentScale / segVelocity.magnitude;
-        for (int i = 1; i < segmentCount; i++)
+        for (int i = 1; i < maxSegmentCount; i++)
         {
             //x axis: spaceX = initialSpaceX + velocityX * time
             //y axis: spaceY = initialSpaceY + velocityY * time + 1/2 * accelerationY * time ^ 2
             //both (vector) space = initialSpace + velocity * time + 1/2 * acceleration * time ^ 2
-            float time2 = i * Time.fixedDeltaTime * 5;
-            segments[i] = segments[0] + segVelocity * time2 + 0.5f * Physics2D.gravity * Mathf.Pow(time2, 2);
+            if (segments[i - 1].x > this.transform.position.x - offsetTrajectory && segments[i - 1].x < this.transform.position.x + offsetTrajectory)
+            {
+                ++segmentCount;
+                float time2 = i * Time.fixedDeltaTime * 5;
+                segments[i] = segments[0] + segVelocity * time2 + 0.5f * Physics2D.gravity * Mathf.Pow(time2, 2);
+            }
+            else
+            {
+                break;
+            }
+            
         }
 
         TrajectoryLineRenderer.positionCount = segmentCount;
         for (int i = 0; i < segmentCount; i++)
         {
             Vector2 v2position = this.transform.position;
-            TrajectoryLineRenderer.SetPosition(i, (segments[i] - v2position) / this.transform.localScale.x);
+            TrajectoryLineRenderer.SetPosition(i, segments[i]);
 
         }
     }

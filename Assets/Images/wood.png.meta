@@ -58,7 +58,7 @@ TextureImporter:
     second: INGAME_BLOCKS_WOOD_1_17
   - first:
       213: 21300036
-    second: INGAME_BLOCKS_WOOD_1_18
+    second: INGAME_BLOCKS_WOOD_3_2
   - first:
       213: 21300038
     second: INGAME_BLOCKS_WOOD_1_19
@@ -67,7 +67,7 @@ TextureImporter:
     second: INGAME_BLOCKS_WOOD_1_20
   - first:
       213: 21300042
-    second: INGAME_BLOCKS_WOOD_1_21
+    second: INGAME_BLOCKS_WOOD_3_3
   - first:
       213: 21300044
     second: INGAME_BLOCKS_WOOD_1_22
@@ -92,6 +92,12 @@ TextureImporter:
   - first:
       213: 21300058
     second: INGAME_BLOCKS_WOOD_1_3
+  - first:
+      213: 7440981132975211316
+    second: INGAME_BLOCKS_WOOD_3_0
+  - first:
+      213: 702437253302840433
+    second: INGAME_BLOCKS_WOOD_3_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -547,7 +553,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: INGAME_BLOCKS_WOOD_1_18
+      name: INGAME_BLOCKS_WOOD_3_2
       rect:
         serializedVersion: 2
         x: 252
@@ -610,7 +616,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: INGAME_BLOCKS_WOOD_1_21
+      name: INGAME_BLOCKS_WOOD_3_3
       rect:
         serializedVersion: 2
         x: 252
@@ -794,6 +800,48 @@ TextureImporter:
       bones: []
       spriteID: a5305410000000000800000000000000
       internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INGAME_BLOCKS_WOOD_3_0
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 235
+        width: 169
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4330f5b9aeca34760800000000000000
+      internalID: 7440981132975211316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INGAME_BLOCKS_WOOD_3_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 105
+        width: 169
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ced10d5fe8fb900800000000000000
+      internalID: 702437253302840433
       vertices: []
       indices: 
       edges: []
