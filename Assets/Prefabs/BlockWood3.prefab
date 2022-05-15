@@ -146,3 +146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHeath: 100
   health: 100
+  spriteArray:
+  - {fileID: 7440981132975211316, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
+  - {fileID: 702437253302840433, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
+  - {fileID: 21300036, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
+  - {fileID: 21300042, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
