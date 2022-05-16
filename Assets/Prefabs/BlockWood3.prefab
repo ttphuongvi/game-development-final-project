@@ -171,4 +171,6 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   shapeDetroy:
   - {fileID: 2223121220830088689, guid: 7cbb9cb5f8fbf4c4ebc39d0cf91e197c, type: 3}
+  - {fileID: 2223121220830088689, guid: e3eaeac8fa489ca4d957767bf2bb5835, type: 3}
+  - {fileID: 2223121220830088689, guid: a4a0b6eeca0787f41965d70ac125aa60, type: 3}
   distanceDetroyShape: 0.4
