@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3110901779248586772}
   - component: {fileID: -1221261077736612249}
   - component: {fileID: 6264418099715963039}
-  - component: {fileID: -7722691303670243219}
+  - component: {fileID: 3332388885471506997}
   m_Layer: 0
-  m_Name: wood_1
+  m_Name: wood_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300010, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
+  m_Sprite: {fileID: 21300008, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,10 +123,10 @@ MonoBehaviour:
   maxHeath: 100
   health: 100
   spriteArray:
-  - {fileID: 21300010, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
-  - {fileID: -534329669, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
-  - {fileID: 21300040, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
-  - {fileID: 1885124661, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
+  - {fileID: 21300008, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
+  - {fileID: 21300034, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
+  - {fileID: -356029498, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
+  - {fileID: 21300028, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
   audioClipCollision:
   - {fileID: 8300000, guid: ca8e85d507326274a871a744d7e36360, type: 3}
   - {fileID: 8300000, guid: d9870366dec16704b951a16ad95d7aed, type: 3}
@@ -143,8 +143,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 72073bf6a9dee674893ff5b62c4a29cc, type: 3}
   - {fileID: 8300000, guid: 7830b8e11351d1b45b8cea4c3696c7f0, type: 3}
   audioSource: {fileID: 0}
---- !u!60 &-7722691303670243219
-PolygonCollider2D:
+--- !u!58 &3332388885471506997
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -157,19 +157,5 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8, y: 0.81}
-    newSize: {x: 1.69, y: 0.21}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.39999998, y: 0.405}
-      - {x: -0.39999998, y: -0.405}
-      - {x: 0.39999998, y: -0.405}
-      - {x: 0.39999998, y: -0.345}
-      - {x: -0.35, y: 0.405}
+  serializedVersion: 2
+  m_Radius: 0.21

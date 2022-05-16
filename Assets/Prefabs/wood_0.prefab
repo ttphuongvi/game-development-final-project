@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
+  m_Sprite: {fileID: 21300032, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,10 +123,10 @@ MonoBehaviour:
   maxHeath: 100
   health: 100
   spriteArray:
+  - {fileID: 21300032, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
   - {fileID: 21300012, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
   - {fileID: 21300014, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: -1305047838, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
   audioClipCollision:
   - {fileID: 8300000, guid: ca8e85d507326274a871a744d7e36360, type: 3}
   - {fileID: 8300000, guid: d9870366dec16704b951a16ad95d7aed, type: 3}
