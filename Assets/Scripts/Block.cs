@@ -43,7 +43,10 @@ public class Block : MonoBehaviour
         if (health <= 0) {
             ChangeAudioClipDestroyRandom();
             audioSource.Play();
-            Destroy(this.gameObject);
+
+            GetComponent<SpriteRenderer>().GetComponent<Renderer>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
+            Destroy(this.gameObject, 2f);
         }
         Debug.Log(damage);
 
