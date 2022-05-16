@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AnimationMinionPigInjuredWin
+  m_Name: AnimationMinionPigSeriouslyInjuredWin
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,10 +19,10 @@ AnimationClip:
   m_FloatCurves: []
   m_PPtrCurves:
   - curve:
-    - time: 0.016666668
-      value: {fileID: -5479683133895703181, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
-    - time: 1.55
-      value: {fileID: -5479683133895703181, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
+    - time: 0
+      value: {fileID: 7147245763364388001, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
+    - time: 1
+      value: {fileID: 7147245763364388001, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
     attribute: m_Sprite
     path: Animations
     classID: 212
@@ -42,14 +42,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -5479683133895703181, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
-    - {fileID: -5479683133895703181, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
+    - {fileID: 7147245763364388001, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
+    - {fileID: 7147245763364388001, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.5666666
+    m_StopTime: 1.0166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
