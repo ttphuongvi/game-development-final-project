@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MinionPigNomal
+  m_Name: AnimationMinionPigIdle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,10 +21,10 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -6370001393866319583, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
-    - time: 0.31666666
+    - time: 0.15
       value: {fileID: -710863540935948103, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
-    - time: 0.6333333
-      value: {fileID: -7335872455698588212, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
+    - time: 0.31666666
+      value: {fileID: -6370001393866319583, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
     attribute: m_Sprite
     path: Animations
     classID: 212
@@ -46,13 +46,13 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: -6370001393866319583, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
     - {fileID: -710863540935948103, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
-    - {fileID: -7335872455698588212, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
+    - {fileID: -6370001393866319583, guid: 0a8beffd8a5a37b4a95f83e29f154687, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.65
+    m_StopTime: 0.33333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
