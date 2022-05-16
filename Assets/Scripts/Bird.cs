@@ -7,7 +7,8 @@ public class Bird : MonoBehaviour
     public enum BirdState
     {
         BeforeThrown,
-        Thrown
+        Thrown,
+        Injured
     }
 
     public BirdState State
