@@ -14,6 +14,9 @@ public class Block : MonoBehaviour
     [HideInInspector]
     public AudioSource audioSource;
 
+    public GameObject[] shapeDetroy;
+    public float distanceDetroyShape;
+
     public void changeSprite(int index)
     {
         GetComponent<SpriteRenderer>().sprite = spriteArray[index];
@@ -46,6 +49,12 @@ public class Block : MonoBehaviour
 
             GetComponent<SpriteRenderer>().GetComponent<Renderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
+            for (int index = 0; index <= 20; index++) {
+                // Instance random shapeDestroy
+                GameObject newShape = Instantiate(shapeDetroy[Random.Range(0, shapeDetroy.Length)], transform.position, Quaternion.identity);
+                Vector3 velocity = new Vector3(Random.Range(-2.0f, 2.0f), Random.Range(-0.2f, 5.0f), 0.0f);
+                newShape.GetComponent<Rigidbody2D>().velocity = velocity;
+            }
             Destroy(this.gameObject, 2f);
         }
         Debug.Log(damage);
@@ -86,4 +95,9 @@ public class Block : MonoBehaviour
     {
         
     }
+
+    public Vector3 RandomVector(Vector3 myVector, Vector3 min, Vector3 max)
+     {
+        return myVector + new Vector3(Random.Range(min.x, max.x), Random.Range(min.y, max.y), UnityEngine.Random.Range(min.z, max.z));
+     }
 }
