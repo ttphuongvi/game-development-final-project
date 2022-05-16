@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 3cd83b8efd75e5645bc185620a0da09f
+guid: d51cb0c1d51f92d41afe5f79ab85ad49
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 3784230713660648570
-    second: kindpng_26258_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -45,11 +42,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.63558847, y: 0.81016475}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -72,30 +69,6 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -105,48 +78,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: kindpng_26258_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 0
-        width: 393
-        height: 962
-      alignment: 9
-      pivot: {x: 0.57524085, y: 0.8708536}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -196.5, y: 421}
-        - {x: -129.5, y: 468}
-        - {x: 2.5, y: 340}
-        - {x: 114.5, y: 39}
-        - {x: 79.5, y: -90}
-        - {x: -60.5, y: 196}
-        - {x: -196.5, y: 355}
-      - - {x: 196.5, y: 80}
-        - {x: 159.5, y: -69}
-        - {x: 114.5, y: 39}
-        - {x: 97.5, y: 249}
-        - {x: 32.5, y: 437}
-        - {x: 62.5, y: 472}
-        - {x: 114.5, y: 481}
-        - {x: 196.5, y: 304}
-      - - {x: 55.5, y: -481}
-        - {x: 79.5, y: -90}
-        - {x: 114.5, y: 39}
-        - {x: 159.5, y: -69}
-        - {x: 180.5, y: -481}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7caddbc8c9448430800000000000000
-      internalID: 3784230713660648570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -157,8 +89,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      kindpng_26258_0: 3784230713660648570
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
