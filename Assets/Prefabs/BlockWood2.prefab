@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 202041598996175844}
   - component: {fileID: 1727585385935629345}
   - component: {fileID: 4779032169182828423}
+  - component: {fileID: 4054434153861461490}
   m_Layer: 0
   m_Name: BlockWood2
   m_TagString: Untagged
@@ -169,3 +170,23 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 72073bf6a9dee674893ff5b62c4a29cc, type: 3}
   - {fileID: 8300000, guid: 7830b8e11351d1b45b8cea4c3696c7f0, type: 3}
   audioSource: {fileID: 0}
+--- !u!95 &4054434153861461490
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967405718730191752}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 10d4688df6a19d04096fab183d2e92ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
