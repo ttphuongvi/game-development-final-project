@@ -54,10 +54,11 @@ public class Block : MonoBehaviour
                 GameObject newShape = Instantiate(shapeDetroy[Random.Range(0, shapeDetroy.Length)], transform.position, Quaternion.identity);
                 Vector3 velocity = new Vector3(Random.Range(-2.0f, 2.0f), Random.Range(-0.2f, 5.0f), 0.0f);
                 newShape.GetComponent<Rigidbody2D>().velocity = velocity;
+                newShape.GetComponent<Rigidbody2D>().angularVelocity = Mathf.Pow(-1, Random.Range(0, 2)) * Random.Range(250.0f, 480.0f);
             }
             Destroy(this.gameObject, 2f);
         }
-        Debug.Log(damage);
+        // Debug.Log(damage);
 
         // Check máu chuyển đổi Sprite
 
