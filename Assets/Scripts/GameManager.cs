@@ -13,12 +13,15 @@ public class GameManager : MonoBehaviour
     public int numLevel;
 
     public VisualTreeAsset templateButton;
+    public Button btnReturn;
 
     // Start is called before the first frame update
     void Start()
     {
         root = GetComponent<UIDocument>().rootVisualElement;
         VisualElement selectLevel = root.Q<VisualElement>("selectLevel");
+        btnReturn = root.Q<Button>("btnReturn");
+        btnReturn.clicked += OnReturnClicked;
 
 
         listLevel = new List<Level>();
@@ -41,5 +44,9 @@ public class GameManager : MonoBehaviour
 
     void OnLevelClicked(int index) {
         SceneManager.LoadScene("Level" + index);
+    }
+
+    void OnReturnClicked() {
+        SceneManager.LoadScene("MenuStart");
     }
 }
