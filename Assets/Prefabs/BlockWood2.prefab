@@ -150,7 +150,7 @@ MonoBehaviour:
   maxHeath: 100
   health: 100
   spriteArray:
-  - {fileID: -4303061334419365831, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
+  - {fileID: 21300006, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
   - {fileID: 21300016, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
   - {fileID: 21300046, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
   - {fileID: 3875477477091452742, guid: 661fe1e67fba6a142bdac97a379ce414, type: 3}
