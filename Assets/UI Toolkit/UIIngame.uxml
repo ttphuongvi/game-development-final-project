@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Stylesheet/button-game.uss?fileID=7433441132597879392&amp;guid=f59ced15e2a94d24293dc5bacb41ce5b&amp;type=3#button-game" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: space-between; display: none;">
+        <ui:Button display-tooltip-when-elided="true" name="btnPause" class="button-game" />
+        <ui:Label text="0" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/Fonts/angrybirds-regular.ttf?fileID=12800000&amp;guid=94626d7bb4295d24b8c43c933c07c021&amp;type=3#angrybirds-regular&apos;); width: 110px; height: 85px; align-items: stretch; justify-content: flex-start; -unity-font-style: bold; font-size: 80px; -unity-text-align: middle-center; color: rgb(243, 172, 36); white-space: nowrap; -unity-text-outline-width: 1px; text-shadow: 5px 3px 1px rgba(62, 28, 6, 0.54); -unity-font-definition: none; -unity-text-outline-color: rgb(62, 28, 6);" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; flex-direction: column-reverse; display: none;">
+        <ui:Button display-tooltip-when-elided="true" class="button-game" style="background-image: url(&apos;project://database/Assets/Images/BUTTONS_SHEET_1.png?fileID=-295194495&amp;guid=3b22e75f12e7e2f4cae3b35456e7280a&amp;type=3#BUTTONS_SHEET_1_45&apos;);" />
+    </ui:VisualElement>
+    <ui:VisualElement style="display: flex; flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement style="flex-grow: 2;" />
+        <ui:VisualElement style="flex-grow: 8;" />
+    </ui:VisualElement>
+</ui:UXML>
