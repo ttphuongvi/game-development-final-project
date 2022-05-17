@@ -30,8 +30,7 @@ public class GameManager : MonoBehaviour
             listLevel.Add(new Level());
             selectLevel.Add(templateButton.Instantiate());
             selectLevel[i].Q<Button>("Button").clicked += delegate{OnLevelClicked(i);};
-            // selectLevel[i].Q<Button>("Button").clicked += OnLevelClicked;
-            selectLevel[i].Q<Button>("Button").text = "Level " + (i + 1);
+            selectLevel[i].Q<Button>("Button").Q<Label>("Label").text = "Level " + (i + 1);
             Debug.Log("Level " + i + " created");
         }
     }

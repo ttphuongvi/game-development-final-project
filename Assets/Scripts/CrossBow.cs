@@ -25,7 +25,6 @@ public class CrossBow : MonoBehaviour
     public float ThrowSpeed;
 
 
-    [HideInInspector]
     public CrossBowStateEnum CrossBowState;
 
     // Audio
