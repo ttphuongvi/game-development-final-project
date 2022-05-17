@@ -11,10 +11,10 @@ public class IngameMenu : MonoBehaviour
     {
         root = GetComponent<UIDocument>().rootVisualElement;
         btnPause = root.Q<Button>("btnPause");
-        btnPause.clicked += OnPauseClicked;
+        // btnPause.clicked += OnPauseClicked;
 
         btnReturn = root.Q<Button>("btnReturn");
-        btnReturn += OnReturnClicked;
+        // btnReturn += OnReturnClicked;
     }
 
     void OnPauseClicked()

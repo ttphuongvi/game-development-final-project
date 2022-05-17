@@ -8,7 +8,13 @@
         <ui:Button display-tooltip-when-elided="true" class="button-game" style="background-image: url(&apos;project://database/Assets/Images/BUTTONS_SHEET_1.png?fileID=-295194495&amp;guid=3b22e75f12e7e2f4cae3b35456e7280a&amp;type=3#BUTTONS_SHEET_1_45&apos;);" />
     </ui:VisualElement>
     <ui:VisualElement style="display: flex; flex-grow: 1; flex-direction: row;">
-        <ui:VisualElement style="flex-grow: 2;" />
-        <ui:VisualElement style="flex-grow: 8;" />
+        <ui:VisualElement style="flex-grow: 2; background-color: rgb(23, 68, 125);">
+            <ui:Button text="Button" display-tooltip-when-elided="true" />
+            <ui:Button text="Button" display-tooltip-when-elided="true" />
+            <ui:Button text="Button" display-tooltip-when-elided="true" />
+            <ui:Button text="Button" display-tooltip-when-elided="true" />
+            <ui:Button text="Button" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 8; background-color: rgba(0, 0, 0, 0.8);" />
     </ui:VisualElement>
 </ui:UXML>
