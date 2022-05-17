@@ -7,7 +7,7 @@ public class IngameMenu : MonoBehaviour
     [HideInInspector]
     public VisualElement root, playState, pauseState, gameOverState;
     [HideInInspector]
-    public Button btnPause, btnReturn, btnResume, btnReload;
+    public Button btnPause, btnReturn, btnReturnPause, btnResume, btnReload;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -17,6 +17,9 @@ public class IngameMenu : MonoBehaviour
 
         btnReturn = root.Q<Button>("btnReturn");
         btnReturn.clicked += OnReturnClicked;
+
+        btnReturnPause = root.Q<Button>("btnReturnPause");
+        btnReturnPause.clicked += OnReturnClicked;
 
         btnResume = root.Q<Button>("btnResume");
         btnResume.clicked += OnResumeClicked;
