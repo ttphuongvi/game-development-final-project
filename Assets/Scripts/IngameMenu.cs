@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class IngameMenu : MonoBehaviour
 {
     [HideInInspector]
     public VisualElement root, playState, pauseState, gameOverState;
     [HideInInspector]
-    public Button btnPause, btnReturn, btnResume;
+    public Button btnPause, btnReturn, btnResume, btnReload;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -20,15 +21,18 @@ public class IngameMenu : MonoBehaviour
         btnResume = root.Q<Button>("btnResume");
         btnResume.clicked += OnResumeClicked;
 
+        btnReload = root.Q<Button>("btnReload");
+        btnReload.clicked += OnReloadClicked;
+
         playState = root.Q<VisualElement>("playState");
         pauseState = root.Q<VisualElement>("pauseState");
     }
 
     void OnPauseClicked()
     {
+        Time.timeScale = 0;
         playState.style.display = DisplayStyle.None;
         pauseState.style.display = DisplayStyle.Flex;
-        // Debug.Log("Pause");
     }
 
     void OnReturnClicked()
@@ -39,7 +43,11 @@ public class IngameMenu : MonoBehaviour
     void OnResumeClicked() {
         playState.style.display = DisplayStyle.Flex;
         pauseState.style.display = DisplayStyle.None;
-        Debug.Log("Clicked");
+        Time.timeScale = 1;
+    }
+
+    void OnReloadClicked() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
