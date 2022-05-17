@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" style="background-image: url(&apos;project://database/Assets/Images/select%20level.png?fileID=-1357425682&amp;guid=0d70020619777014d987021fea4176dd&amp;type=3#select level_5&apos;); width: 200px; height: 200px; background-color: rgba(88, 88, 88, 0); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+</ui:UXML>

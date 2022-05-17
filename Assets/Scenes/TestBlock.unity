@@ -483,14 +483,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1784267072838046290, guid: 14cc048ed3509f04b8227c184e92cce8, type: 3}
-      propertyPath: sourceAsset
-      value: 
-      objectReference: {fileID: 9197481963319205126, guid: 39dc84741dfb5ae4d95e8659d1ad1e53, type: 3}
-    - target: {fileID: 1784267072838046290, guid: 14cc048ed3509f04b8227c184e92cce8, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4270766817589176587, guid: 14cc048ed3509f04b8227c184e92cce8, type: 3}
       propertyPath: m_Name
       value: UIIngame
