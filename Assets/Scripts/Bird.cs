@@ -21,11 +21,15 @@ public class Bird : MonoBehaviour
     public Vector2 limitMove;
     public float MinVelocity = 0.05f;
 
+    [HideInInspector]
+    public Animator animator;
+
 
     void Start()
     {
         GetComponent<Rigidbody2D>().isKinematic = true;
         State = BirdState.BeforeThrown;
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -40,6 +44,7 @@ public class Bird : MonoBehaviour
     public void Thrown()
     {
         GetComponent<Rigidbody2D>().isKinematic = false;
+        animator.SetInteger("State", 1);
         State = BirdState.Thrown;
     }
 
