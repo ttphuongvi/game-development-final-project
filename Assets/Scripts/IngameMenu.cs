@@ -35,11 +35,6 @@ public class IngameMenu : MonoBehaviour
         pauseState.style.display = DisplayStyle.Flex;
     }
 
-    void OnReturnClicked()
-    {
-        Debug.Log("Clicked");
-    }
-
     void OnResumeClicked() {
         playState.style.display = DisplayStyle.Flex;
         pauseState.style.display = DisplayStyle.None;
@@ -48,6 +43,10 @@ public class IngameMenu : MonoBehaviour
 
     void OnReloadClicked() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void OnReturnClicked() {
+        SceneManager.LoadScene("ChooseLevel");
     }
 
 }
