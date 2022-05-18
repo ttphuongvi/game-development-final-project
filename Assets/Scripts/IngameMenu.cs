@@ -73,21 +73,22 @@ public class IngameMenu : MonoBehaviour
 
     void Update()
     {
-        if (gameManager)
+        if (gameManager) {
             lbScore.text = gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore.ToString();
-        GameObject[] listPig = GameObject.FindGameObjectsWithTag("Enemy");
-        GameObject[] listBird = GameObject.FindGameObjectsWithTag("Bird");
-        if (listPig.Length == 0) {
-            Debug.Log("Win");
-            gameManager.GetComponent<GameManager>().listLevel[indexLevel].Defeated = true;
-            gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore = 0;
-            SceneManager.LoadScene("ChooseLevel");
-        }
+            GameObject[] listPig = GameObject.FindGameObjectsWithTag("Enemy");
+            GameObject[] listBird = GameObject.FindGameObjectsWithTag("Bird");
+            if (listPig.Length == 0) {
+                Debug.Log("Win");
+                gameManager.GetComponent<GameManager>().listLevel[indexLevel].Defeated = true;
+                gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore = 0;
+                SceneManager.LoadScene("ChooseLevel");
+            }
 
-        if (listBird.Length == 0) {
-            Debug.Log("Lose");
-            gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore = 0;
-            SceneManager.LoadScene("ChooseLevel");
+            if (listBird.Length == 0) {
+                Debug.Log("Lose");
+                gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore = 0;
+                SceneManager.LoadScene("ChooseLevel");
+            }
         }
     }
 
