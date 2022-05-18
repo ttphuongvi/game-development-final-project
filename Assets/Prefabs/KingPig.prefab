@@ -96,9 +96,10 @@ GameObject:
   - component: {fileID: 9083370726037310118}
   - component: {fileID: 5449764624236794645}
   - component: {fileID: 869364370265845323}
+  - component: {fileID: 1976945683250971634}
   m_Layer: 0
   m_Name: KingPig
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,3 +177,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.006937648, y: -0.20411076}
   m_Size: {x: 1.3137248, y: 1.0592631}
   m_Direction: 1
+--- !u!114 &1976945683250971634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104300151797046265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2808a79556832f844a49a6853865dc9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHeath: 500
+  health: 0
+  animator: {fileID: 0}

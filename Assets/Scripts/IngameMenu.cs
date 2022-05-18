@@ -62,14 +62,34 @@ public class IngameMenu : MonoBehaviour
     }
     
     void Start() {
-        gameManager = GameObject.FindGameObjectsWithTag("GameController")[0];
+        GameObject[] obj = GameObject.FindGameObjectsWithTag("GameController");
+        if (obj.Length > 0) {
+            gameManager = obj[0];
+        }
+
         string nameScene = SceneManager.GetActiveScene().name;
         indexLevel = (int)nameScene[nameScene.Length - 1] - 49;
     }
 
     void Update()
     {
-        lbScore.text = gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore.ToString();
+        if (gameManager) {
+            lbScore.text = gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore.ToString();
+            GameObject[] listPig = GameObject.FindGameObjectsWithTag("Enemy");
+            GameObject[] listBird = GameObject.FindGameObjectsWithTag("Bird");
+            if (listPig.Length == 0) {
+                Debug.Log("Win");
+                gameManager.GetComponent<GameManager>().listLevel[indexLevel].Defeated = true;
+                gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore = 0;
+                SceneManager.LoadScene("ChooseLevel");
+            }
+
+            if (listBird.Length == 0) {
+                Debug.Log("Lose");
+                gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore = 0;
+                SceneManager.LoadScene("ChooseLevel");
+            }
+        }
     }
 
 
