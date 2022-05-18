@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    public float maxHeath;
-    [HideInInspector]
+    public float maxHeath = 100;
+    [ShowOnly]
     public float health;
     public Sprite[] spriteArray;
     
@@ -48,7 +48,7 @@ public class Block : MonoBehaviour
             audioSource.Play();
 
             GetComponent<SpriteRenderer>().GetComponent<Renderer>().enabled = false;
-            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<Collider2D>().enabled = false;
             for (int index = 0; index <= 20; index++) {
                 // Instance random shapeDestroy
                 GameObject newShape = Instantiate(shapeDetroy[Random.Range(0, shapeDetroy.Length)], transform.position, Quaternion.identity);
