@@ -154,8 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f380ffc7f5c31b47b3ee8f9a82bc780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listLevel: []
-  numLevel: 3
+  numLevel: 5
   templateButton: {fileID: 9197481963319205126, guid: 4975f2c39f7ba9943a86efe139cfeaa3, type: 3}
 --- !u!4 &680340621
 Transform:
@@ -297,3 +296,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3eb882f2c5cfc74d913567d60ad8050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}

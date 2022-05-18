@@ -86,7 +86,6 @@ public class IngameMenu : MonoBehaviour
             if (listPig.Length == 0) {
                 Debug.Log("Win");
                 level.Defeated = true;
-                currentScore = 0;
                 if (level.HighScore < currentScore)
                     level.HighScore = currentScore;
                 SceneManager.LoadScene("ChooseLevel");
