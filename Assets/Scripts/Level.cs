@@ -14,6 +14,7 @@ public class Level
         ThreeStarReq = 30000;
         numLevel = numLevel;
         Debug.Log("Level " + numLevel + " created");
+        Defeated = false;
     }
 
     // Start is called before the first frame update
@@ -31,15 +32,7 @@ public class Level
     public bool Unlocked;
     public  int OneStarReq, TwoStarReq, ThreeStarReq;
 
-    public  bool Defeated
-    {
-        get
-        {
-            if (HighScore > OneStarReq)
-                return true;
-            return false;
-        }
-    }
+    public bool Defeated;
     
     public bool CurrentDefeated
     {
