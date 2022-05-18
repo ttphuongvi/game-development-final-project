@@ -66,7 +66,7 @@ MonoBehaviour:
   CrossBowState: 0
   Shot: {fileID: 6884366227399745267}
   Stretched: {fileID: 7486428470319885097}
-  offsetTrajectory: 3
+  offsetTrajectory: 6
 --- !u!1 &3436818615648941686
 GameObject:
   m_ObjectHideFlags: 0

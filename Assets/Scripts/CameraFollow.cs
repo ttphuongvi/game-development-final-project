@@ -6,8 +6,8 @@ public class CameraFollow : MonoBehaviour
 {
     [HideInInspector]
     public bool IsFollowing;
-    private const float minCameraX = 0;
-    private const float maxCameraX = 15;
+    public float minCameraX = 0;
+    public float maxCameraX = 15;
     public GameObject BirdToFollow;
     // Start is called before the first frame update
     void Start()
