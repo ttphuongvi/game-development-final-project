@@ -53,7 +53,7 @@ public class CrossBow : MonoBehaviour
                     // Nhân mút sẽ chuyển sang trạng thái UserPulling
                     Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     Collider2D targetObject = Physics2D.OverlapPoint(mousePosition);
-                    if (targetObject && targetObject == SelectedBird.GetComponent<CircleCollider2D>())
+                    if (targetObject && targetObject == SelectedBird.GetComponent<Collider2D>())
                     {
                         CrossBowState = CrossBowStateEnum.UserPulling;
                         // Bật tiếng kéo
