@@ -610,6 +610,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6358494229636839636, guid: 1a86b9699ad1b5e4a8336b60354d6c82, type: 3}
   m_PrefabInstance: {fileID: 1178651205}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1246703648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246703642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8d9701e55a14e45bb352fc9e155950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1266214315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -741,7 +753,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2808a79556832f844a49a6853865dc9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defend: 5
+  maxHeath: 100
+  health: 0
+  animator: {fileID: 0}
 --- !u!60 &1371406179
 PolygonCollider2D:
   m_ObjectHideFlags: 0
