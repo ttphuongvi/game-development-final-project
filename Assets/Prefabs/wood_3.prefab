@@ -143,6 +143,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 72073bf6a9dee674893ff5b62c4a29cc, type: 3}
   - {fileID: 8300000, guid: 7830b8e11351d1b45b8cea4c3696c7f0, type: 3}
   audioSource: {fileID: 0}
+  shapeDetroy: []
+  distanceDetroyShape: 0
 --- !u!58 &3332388885471506997
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -156,6 +158,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0059344172, y: 0}
   serializedVersion: 2
-  m_Radius: 0.21
+  m_Radius: 0.20010927

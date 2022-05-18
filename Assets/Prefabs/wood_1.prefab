@@ -143,6 +143,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 72073bf6a9dee674893ff5b62c4a29cc, type: 3}
   - {fileID: 8300000, guid: 7830b8e11351d1b45b8cea4c3696c7f0, type: 3}
   audioSource: {fileID: 0}
+  shapeDetroy: []
+  distanceDetroyShape: 0
 --- !u!60 &-7722691303670243219
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -168,8 +170,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.39999998, y: 0.405}
-      - {x: -0.39999998, y: -0.405}
-      - {x: 0.39999998, y: -0.405}
-      - {x: 0.39999998, y: -0.345}
-      - {x: -0.35, y: 0.405}
+    - - {x: -0.40016234, y: 0.39228442}
+      - {x: -0.39930323, y: -0.39733598}
+      - {x: 0.37964916, y: -0.39853942}
+      - {x: 0.39728886, y: -0.3643132}
+      - {x: -0.37780645, y: 0.40444967}
