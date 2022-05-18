@@ -48,7 +48,7 @@ public class Block : MonoBehaviour
 
         // Add Score
         if (gameManager)
-            gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore += (int)damage;
+            gameManager.GetComponent<IngameMenu>().currentScore += (int)damage;
 
         float oldHealth = health;
         health -= damage;
@@ -97,13 +97,7 @@ public class Block : MonoBehaviour
         audioSource = gameObject.AddComponent<AudioSource>();
 
         // Get Game Manager
-        GameObject[] obj = GameObject.FindGameObjectsWithTag("GameController");
-        if (obj.Length > 0) {
-            gameManager = obj[0];
-        }
-
-        string nameScene = SceneManager.GetActiveScene().name;
-        indexLevel = (int)nameScene[nameScene.Length - 1] - 49;
+        gameManager = GameObject.Find("UIIngame");
     }
 
     // Update is called once per frame
