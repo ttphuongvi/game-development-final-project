@@ -3051,5 +3051,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grid
       objectReference: {fileID: 0}
+    - target: {fileID: 4032804499330514189, guid: bf47f56de86a2f248be576514828ed21, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3623607
+      objectReference: {fileID: 0}
+    - target: {fileID: 4032804499330514189, guid: bf47f56de86a2f248be576514828ed21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.593
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf47f56de86a2f248be576514828ed21, type: 3}
