@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1327891962328305013}
   - component: {fileID: -813321251700312726}
   - component: {fileID: 7870516055954549488}
+  - component: {fileID: 947313747642987549}
   m_Layer: 0
   m_Name: yellow_bird
   m_TagString: Untagged
@@ -102,7 +103,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7703fafc515bb8e4ca911285a36debbc, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -139,3 +140,19 @@ PolygonCollider2D:
       - {x: 0.004336208, y: 0.18548417}
       - {x: -0.14497137, y: 0.0009279251}
       - {x: -0.2532977, y: -0.230841}
+--- !u!114 &947313747642987549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6358494229636839636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aff73373b4e988b40877785bb6c0e199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canMove: 1
+  limitMove: {x: 3, y: 1.5}
+  MinVelocity: 0.05
+  animator: {fileID: 0}
