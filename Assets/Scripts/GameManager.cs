@@ -62,6 +62,11 @@ public class GameManager : MonoBehaviour
             if (listLevel[i].Unlocked) {
                 selectLevel[i].Q<Button>("Button").clicked += delegate{OnLevelClicked(x);};
             }
+            if (listLevel[i].CurrentScore > listLevel[i].HighScore)
+                listLevel[i].HighScore = listLevel[i].CurrentScore;
+            if (i < numLevel - 1 && listLevel[i].Defeated) 
+                listLevel[i + 1].Unlocked = true;
+                
             selectLevel[i].Q<Button>("Button").Q<Label>("lbLevel").text = "Level " + (i + 1);
         }
     }
