@@ -11,7 +11,7 @@ public class IngameMenu : MonoBehaviour
     [HideInInspector]
     public Label lbScore;
     [ShowOnly]
-    public int indexLevel;
+    public int indexLevel, currentScore = 0;
 
     public GameObject gameManager;
     // Start is called before the first frame update
@@ -73,34 +73,56 @@ public class IngameMenu : MonoBehaviour
 
     void Update()
     {
+        GameObject[] listPig = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] listBird = GameObject.FindGameObjectsWithTag("Bird");
+        GameObject crossBow = GameObject.FindGameObjectsWithTag("CrossBow")[0];
+        lbScore.text = currentScore.ToString();
+
+        
         if (gameManager) {
             Level level = gameManager.GetComponent<GameManager>().listLevel[indexLevel];
-            lbScore.text = level.CurrentScore.ToString();
-            GameObject[] listPig = GameObject.FindGameObjectsWithTag("Enemy");
-            GameObject[] listBird = GameObject.FindGameObjectsWithTag("Bird");
-            GameObject crossBow = GameObject.FindGameObjectsWithTag("CrossBow")[0];
+            
+
             if (listPig.Length == 0) {
                 Debug.Log("Win");
                 level.Defeated = true;
-                level.CurrentScore = 0;
-                if (level.HighScore < level.CurrentScore)
-                    level.HighScore = level.CurrentScore;
+                currentScore = 0;
+                if (level.HighScore < currentScore)
+                    level.HighScore = currentScore;
                 SceneManager.LoadScene("ChooseLevel");
             }
 
             if (listBird.Length == 0) {
                 Debug.Log("Lose");
-                level.CurrentScore = 0;
+                currentScore = 0;
                 SceneManager.LoadScene("ChooseLevel");
-            } else if (crossBow.GetComponent<CrossBow>().SelectedBird == null) {
-                CrossBow crossBowComponent = crossBow.GetComponent<CrossBow>();
-                crossBowComponent.SelectedBird = listBird[0];
-                crossBowComponent.CrossBowState = CrossBow.CrossBowStateEnum.Idle;
             }
-
+        
         }
+        if (crossBow.GetComponent<CrossBow>().SelectedBird == null) {
+            CrossBow crossBowComponent = crossBow.GetComponent<CrossBow>();
+            GameObject bird = GetClosestBird(listBird, crossBow);
+            crossBowComponent.SelectedBird = bird;
+            crossBowComponent.CrossBowState = CrossBow.CrossBowStateEnum.Idle;
+            GameObject mainCamera = GameObject.FindGameObjectsWithTag("MainCamera")[0];
+            mainCamera.GetComponent<CameraFollow>().BirdToFollow = bird;
+        }   
     }
 
-
-
+    public GameObject GetClosestBird(GameObject[] Bird, GameObject crossBow)
+    {
+        GameObject tMin = null;
+        float minDist = Mathf.Infinity;
+        Vector3 currentPos = crossBow.transform.position;
+        foreach (GameObject t in Bird)
+        {
+            float dist = Vector3.Distance(t.transform.position, currentPos);
+            if (dist < minDist)
+            {
+                tMin = t;
+                minDist = dist;
+            }
+        }
+        return tMin;
+    }
 }

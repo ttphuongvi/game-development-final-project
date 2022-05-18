@@ -435,11 +435,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac14c962ec18c164fa753b8af358597e, type: 3}
---- !u!1 &422301236 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8023854306486032744, guid: 4d6a63043a68a404e8a10bce3a95a165, type: 3}
-  m_PrefabInstance: {fileID: 762977010}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &505968488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -511,7 +506,7 @@ PrefabInstance:
     - target: {fileID: -5224075438547248241, guid: e9cd0a3c9a048cf499e71c487ac93836, type: 3}
       propertyPath: SelectedBird
       value: 
-      objectReference: {fileID: 422301236}
+      objectReference: {fileID: 0}
     - target: {fileID: -5224075438547248241, guid: e9cd0a3c9a048cf499e71c487ac93836, type: 3}
       propertyPath: offsetTrajectory
       value: 6
@@ -1328,7 +1323,7 @@ PrefabInstance:
     - target: {fileID: 1936557013703371635, guid: 68dc46b5269f5b948bb17635ab08be41, type: 3}
       propertyPath: BirdToFollow
       value: 
-      objectReference: {fileID: 422301236}
+      objectReference: {fileID: 0}
     - target: {fileID: 1936557013703371661, guid: 68dc46b5269f5b948bb17635ab08be41, type: 3}
       propertyPath: m_RootOrder
       value: 0
