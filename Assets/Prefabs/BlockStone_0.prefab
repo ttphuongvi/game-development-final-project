@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0185160fa7ad0b4397abeb6b6519d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHeath: 100
+  maxHeath: 200
   health: 0
   spriteArray:
   - {fileID: 349566749, guid: 532f709fd57003d4e9bc0c638f62d8a0, type: 3}
@@ -173,3 +173,5 @@ MonoBehaviour:
   - {fileID: 2223121220830088689, guid: 5970aa6c70cad6d418c2fc5c0ea63725, type: 3}
   - {fileID: 2223121220830088689, guid: eb93e0b4fff0aa2469095bdd7a21ed3b, type: 3}
   distanceDetroyShape: 0.4
+  gameManager: {fileID: 0}
+  indexLevel: 0
