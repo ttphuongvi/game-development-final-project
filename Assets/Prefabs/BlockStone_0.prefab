@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1727585385935629345}
   - component: {fileID: 4779032169182828423}
   m_Layer: 0
-  m_Name: BlockStone
+  m_Name: BlockStone_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3967405718730191752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0048, y: 0.0024, z: 0}
+  m_LocalPosition: {x: 0.111, y: 0.302, z: 0}
   m_LocalScale: {x: 1.0118, y: 0.9941, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -100,7 +100,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0010150522, y: 0.00013935566}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -111,7 +111,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.84, y: 0.83}
+  m_Size: {x: 0.82172394, y: 0.8193108}
   m_EdgeRadius: 0
 --- !u!50 &1727585385935629345
 Rigidbody2D:
