@@ -5,9 +5,14 @@
                 <ui:Label text="Level" display-tooltip-when-elided="true" name="lbLevel" style="color: rgb(255, 255, 255); flex-grow: 1;" />
             </ui:VisualElement>
             <ui:VisualElement style="flex-grow: 8; background-image: none; align-items: center;">
-                <ui:VisualElement name="Lock" style="background-image: url(&apos;project://database/Assets/Images/select%20level.png?fileID=607074976&amp;guid=0d70020619777014d987021fea4176dd&amp;type=3#select level_6&apos;); flex-grow: 1; width: 40%; display: none;" />
+                <ui:VisualElement name="Lock" style="background-image: url(&apos;project://database/Assets/Images/select%20level.png?fileID=607074976&amp;guid=0d70020619777014d987021fea4176dd&amp;type=3#select level_6&apos;); flex-grow: 1; width: 35%; display: none;" />
             </ui:VisualElement>
-            <ui:VisualElement style="flex-grow: 5;" />
+            <ui:VisualElement style="flex-grow: 5; flex-direction: row;">
+                <ui:VisualElement style="flex-grow: 1; flex-direction: row; align-items: flex-end; color: rgb(255, 244, 244);">
+                    <ui:Label text="Label" display-tooltip-when-elided="true" name="lbHighScore" style="flex-grow: 1; bottom: -5px;" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1;" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:Button>
 </ui:UXML>

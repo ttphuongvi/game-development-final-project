@@ -59,14 +59,17 @@ public class GameManager : MonoBehaviour
             selectLevel.Add(templateButton.Instantiate());
             int x = i + 1;
             selectLevel[i].Q<VisualElement>("Lock").style.display = (listLevel[i].Unlocked) ? DisplayStyle.None : DisplayStyle.Flex;
-            if (listLevel[i].Unlocked) {
-                selectLevel[i].Q<Button>("Button").clicked += delegate{OnLevelClicked(x);};
-            }
+            Button btn = selectLevel[i].Q<Button>("Button");
             
-            if (i < numLevel - 1 && listLevel[i].Defeated) 
+            if (listLevel[i].Unlocked) {
+                btn.clicked += delegate{OnLevelClicked(x);};
+            }
+
+            if (i < numLevel - 1 && listLevel[i].Defeated)
                 listLevel[i + 1].Unlocked = true;
                 
-            selectLevel[i].Q<Button>("Button").Q<Label>("lbLevel").text = "Level " + (i + 1);
+            btn.Q<Label>("lbLevel").text = "Level " + (i + 1);
+            btn.Q<Label>("lbHighScore").text = listLevel[i].HighScore.ToString();
         }
     }
 }
