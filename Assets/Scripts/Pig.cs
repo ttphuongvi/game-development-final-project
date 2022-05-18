@@ -25,7 +25,7 @@ public class Pig : MonoBehaviour
         health -= damage;
         if (health <= 0) {
             // animator.SetInteger("State", 2);
-            GetComponent<SpriteRenderer>().GetComponent<Renderer>().enabled = false;
+            this.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().GetComponent<Renderer>().enabled = false;
             GetComponent<Collider2D>().enabled = false;
             Destroy(this.gameObject, 2f);
         }
