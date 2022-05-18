@@ -38,20 +38,16 @@ public class Bird : MonoBehaviour
         if (State == BirdState.Thrown && GetComponent<Rigidbody2D>().velocity.sqrMagnitude <= MinVelocity)
         {
             //destroy the bird after 2 seconds
-            // StartCoroutine(DestroyAfter(2));
+            // Destroy(gameObject, 2);
         }
     }
 
     public void Thrown()
     {
         GetComponent<Rigidbody2D>().isKinematic = false;
-        animator.SetInteger("State", 1);
+        if (animator)
+            animator.SetInteger("State", 1);
         State = BirdState.Thrown;
     }
 
-    IEnumerator DestroyAfter(float seconds)
-    {
-        yield return new WaitForSeconds(seconds);
-        Destroy(gameObject);
-    }
 }
