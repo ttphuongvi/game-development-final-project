@@ -47,7 +47,8 @@ public class Block : MonoBehaviour
         float damage = col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * 100;
 
         // Add Score
-        gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore += (int)damage;
+        if (gameManager)
+            gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore += (int)damage;
 
         float oldHealth = health;
         health -= damage;
@@ -96,7 +97,10 @@ public class Block : MonoBehaviour
         audioSource = gameObject.AddComponent<AudioSource>();
 
         // Get Game Manager
-        gameManager = GameObject.FindGameObjectsWithTag("GameController")[0];
+        GameObject[] obj = GameObject.FindGameObjectsWithTag("GameController");
+        if (obj.Length > 0) {
+            gameManager = obj[0];
+        }
 
         string nameScene = SceneManager.GetActiveScene().name;
         indexLevel = (int)nameScene[nameScene.Length - 1] - 49;

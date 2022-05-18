@@ -62,14 +62,19 @@ public class IngameMenu : MonoBehaviour
     }
     
     void Start() {
-        gameManager = GameObject.FindGameObjectsWithTag("GameController")[0];
+        GameObject[] obj = GameObject.FindGameObjectsWithTag("GameController");
+        if (obj.Length > 0) {
+            gameManager = obj[0];
+        }
+
         string nameScene = SceneManager.GetActiveScene().name;
         indexLevel = (int)nameScene[nameScene.Length - 1] - 49;
     }
 
     void Update()
     {
-        lbScore.text = gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore.ToString();
+        if (gameManager)
+            lbScore.text = gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore.ToString();
     }
 
 

@@ -8,7 +8,7 @@ public class Level
     public Level(int numLevel) {
         HighScore = 0;
         CurrentScore = 0;
-        Unlocked = false;
+        Unlocked = (numLevel == 1 ? true : false);
         OneStarReq = 10000;
         TwoStarReq = 20000;
         ThreeStarReq = 30000;
