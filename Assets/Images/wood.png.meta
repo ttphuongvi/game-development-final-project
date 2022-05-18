@@ -206,7 +206,7 @@ TextureImporter:
       name: wood_2_4
       rect:
         serializedVersion: 2
-        x: 336
+        x: 337
         y: 334
         width: 83
         height: 83
@@ -816,7 +816,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 253
-        y: 333
+        y: 334
         width: 83
         height: 83
       alignment: 9
@@ -857,7 +857,7 @@ TextureImporter:
       name: wood_2_0
       rect:
         serializedVersion: 2
-        x: 87
+        x: 85
         y: 334
         width: 83
         height: 83

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3110901779248586772}
   - component: {fileID: -1221261077736612249}
   - component: {fileID: 6264418099715963039}
-  - component: {fileID: -5160522930678835616}
+  - component: {fileID: 43724594874436034}
   m_Layer: 0
   m_Name: wood_2
   m_TagString: Untagged
@@ -143,7 +143,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 72073bf6a9dee674893ff5b62c4a29cc, type: 3}
   - {fileID: 8300000, guid: 7830b8e11351d1b45b8cea4c3696c7f0, type: 3}
   audioSource: {fileID: 0}
---- !u!60 &-5160522930678835616
+  shapeDetroy: []
+  distanceDetroyShape: 0
+--- !u!60 &43724594874436034
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,17 +170,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.015, y: 0.415}
-      - {x: -0.074999996, y: 0.415}
-      - {x: -0.415, y: -0.225}
-      - {x: -0.415, y: -0.415}
-      - {x: 0.415, y: -0.415}
-      - {x: 0.415, y: -0.315}
-      - {x: 0.044999998, y: 0.39499998}
-    - - {x: -0.035, y: 0.024999999}
-      - {x: -0.024999999, y: 0.015}
-      - {x: 0.005, y: -0.055}
-      - {x: 0.024999999, y: -0.074999996}
-      - {x: 0.055, y: -0.145}
-      - {x: 0.085, y: -0.175}
-      - {x: -0.125, y: -0.16499999}
+    - - {x: -0.41269484, y: -0.41350973}
+      - {x: 0.40012163, y: -0.41486046}
+      - {x: 0.41502577, y: -0.3595638}
+      - {x: 0.016972534, y: 0.40480846}
+      - {x: -0.02699754, y: 0.4053725}
+      - {x: -0.41839704, y: -0.34626475}
