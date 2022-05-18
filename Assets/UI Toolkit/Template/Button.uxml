@@ -1,5 +1,13 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:Button display-tooltip-when-elided="true" name="Button" style="background-image: url(&apos;project://database/Assets/Images/select%20level.png?fileID=-1357425682&amp;guid=0d70020619777014d987021fea4176dd&amp;type=3#select level_5&apos;); width: 200px; height: 200px; background-color: rgba(88, 88, 88, 0); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; -unity-font-style: bold; -unity-font: url(&apos;project://database/Assets/Fonts/angrybirds-regular.ttf?fileID=12800000&amp;guid=94626d7bb4295d24b8c43c933c07c021&amp;type=3#angrybirds-regular&apos;); -unity-font-definition: none; font-size: 20px;">
-        <ui:Label text="Label" display-tooltip-when-elided="true" name="Label" style="height: 45px; top: -10px; color: rgb(255, 255, 255);" />
+    <ui:Button display-tooltip-when-elided="true" name="Button" style="background-image: url(&apos;project://database/Assets/Images/select%20level.png?fileID=472599373&amp;guid=0d70020619777014d987021fea4176dd&amp;type=3#select level_1&apos;); width: 200px; height: 200px; background-color: rgba(88, 88, 88, 0); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; -unity-font-style: bold; -unity-font: url(&apos;project://database/Assets/Fonts/angrybirds-regular.ttf?fileID=12800000&amp;guid=94626d7bb4295d24b8c43c933c07c021&amp;type=3#angrybirds-regular&apos;); -unity-font-definition: none; font-size: 20px;">
+        <ui:VisualElement style="display: flex; top: -10px; flex-grow: 1;">
+            <ui:VisualElement style="flex-grow: 1; flex-direction: column;">
+                <ui:Label text="Level" display-tooltip-when-elided="true" name="lbLevel" style="color: rgb(255, 255, 255); flex-grow: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 8; background-image: none; align-items: center;">
+                <ui:VisualElement name="Lock" style="background-image: url(&apos;project://database/Assets/Images/select%20level.png?fileID=607074976&amp;guid=0d70020619777014d987021fea4176dd&amp;type=3#select level_6&apos;); flex-grow: 1; width: 40%; display: none;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 5;" />
+        </ui:VisualElement>
     </ui:Button>
 </ui:UXML>

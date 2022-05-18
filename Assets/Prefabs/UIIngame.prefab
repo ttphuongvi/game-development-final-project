@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 515652591877394604}
   - component: {fileID: 1784267072838046290}
+  - component: {fileID: 6903500708980371131}
   m_Layer: 0
   m_Name: UIIngame
   m_TagString: Untagged
@@ -48,3 +49,15 @@ MonoBehaviour:
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: 39dc84741dfb5ae4d95e8659d1ad1e53, type: 3}
   m_SortingOrder: 0
+--- !u!114 &6903500708980371131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4270766817589176587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8d420bb5f8883419b422c1221eae52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

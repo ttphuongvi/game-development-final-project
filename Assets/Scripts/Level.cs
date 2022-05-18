@@ -5,19 +5,20 @@ using UnityEngine;
 public class Level : MonoBehaviour
 {
 
-    public Level() {
+    public Level(int numLevel) {
         HighScore = 0;
         CurrentScore = 0;
         Unlocked = false;
         OneStarReq = 10000;
         TwoStarReq = 20000;
         ThreeStarReq = 30000;
+        numLevel = numLevel;
+        Debug.Log("Level " + numLevel + " created");
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -25,12 +26,12 @@ public class Level : MonoBehaviour
     {
         
     }
+    public int numLevel;
+    public int HighScore, CurrentScore;
+    public bool Unlocked;
+    public  int OneStarReq, TwoStarReq, ThreeStarReq;
 
-    public static int HighScore, CurrentScore;
-    public static bool Unlocked;
-    public static int OneStarReq, TwoStarReq, ThreeStarReq;
-
-    public static bool Defeated
+    public  bool Defeated
     {
         get
         {
@@ -40,7 +41,7 @@ public class Level : MonoBehaviour
         }
     }
     
-    public static bool CurrentDefeated
+    public bool CurrentDefeated
     {
         get
         {
@@ -50,7 +51,7 @@ public class Level : MonoBehaviour
         }
     }
 
-    public static int CurrStarScore
+    public int CurrStarScore
     {
         get
         {
@@ -64,7 +65,7 @@ public class Level : MonoBehaviour
         }
     }
 
-    public static int HighStarScore
+    public int HighStarScore
     {
         get
         {

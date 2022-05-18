@@ -25,13 +25,14 @@ public class GameManager : MonoBehaviour
 
 
         listLevel = new List<Level>();
-        for (int i = 0; i < numLevel; i++)
+        for (int i = 0; i < numLevel; ++i)
         {
-            listLevel.Add(new Level());
+            listLevel.Add(new Level(i + 1));
             selectLevel.Add(templateButton.Instantiate());
-            selectLevel[i].Q<Button>("Button").clicked += delegate{OnLevelClicked(i);};
-            selectLevel[i].Q<Button>("Button").Q<Label>("Label").text = "Level " + (i + 1);
-            Debug.Log("Level " + i + " created");
+            int x = i + 1;
+            selectLevel[i].Q<VisualElement>("Lock").style.display = (listLevel[i].Unlocked) ? DisplayStyle.None : DisplayStyle.Flex;
+            selectLevel[i].Q<Button>("Button").clicked += delegate{OnLevelClicked(x);};
+            selectLevel[i].Q<Button>("Button").Q<Label>("lbLevel").text = "Level " + (i + 1);
         }
     }
 
@@ -42,6 +43,7 @@ public class GameManager : MonoBehaviour
     }
 
     void OnLevelClicked(int index) {
+        Debug.Log(index);
         SceneManager.LoadScene("Level" + index);
     }
 
