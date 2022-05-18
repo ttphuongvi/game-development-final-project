@@ -50,6 +50,8 @@ public class GameManager : MonoBehaviour
     public void RenderSelectScreen() {
         root = GetComponent<UIDocument>().rootVisualElement;
         VisualElement selectLevel = root.Q<VisualElement>("selectLevel");
+        btnReturn = root.Q<Button>("btnReturn");
+        btnReturn.clicked += OnReturnClicked;
 
 
         // listLevel = new List<Level>();

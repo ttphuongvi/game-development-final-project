@@ -55,7 +55,8 @@ public class Block : MonoBehaviour
         if (health <= 0) {
             ChangeAudioClipDestroyRandom();
             audioSource.Play();
-
+            if (gameManager)
+                gameManager.GetComponent<IngameMenu>().currentScore += 500;
             GetComponent<SpriteRenderer>().GetComponent<Renderer>().enabled = false;
             GetComponent<Collider2D>().enabled = false;
             for (int index = 0; index <= 20; index++) {
