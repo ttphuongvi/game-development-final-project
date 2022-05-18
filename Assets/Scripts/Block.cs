@@ -17,9 +17,10 @@ public class Block : MonoBehaviour
 
     public GameObject[] shapeDetroy;
     public float distanceDetroyShape;
-
+    [HideInInspector]
     public GameObject gameManager;
-
+    [HideInInspector]
+    public int indexLevel;
     public void changeSprite(int index)
     {
         GetComponent<SpriteRenderer>().sprite = spriteArray[index];
@@ -44,11 +45,6 @@ public class Block : MonoBehaviour
 
         // Tính damage, detroy nếu hết máu
         float damage = col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * 100;
-
-        // Get Game Manager
-        gameManager = GameObject.FindGameObjectsWithTag("GameController")[0];
-        string nameScene = SceneManager.GetActiveScene().name;
-        int indexLevel = (int)nameScene[nameScene.Length - 1] - 49;
 
         // Add Score
         gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore += (int)damage;
@@ -98,6 +94,12 @@ public class Block : MonoBehaviour
     {
         health = maxHeath;
         audioSource = gameObject.AddComponent<AudioSource>();
+
+        // Get Game Manager
+        gameManager = GameObject.FindGameObjectsWithTag("GameController")[0];
+
+        string nameScene = SceneManager.GetActiveScene().name;
+        indexLevel = (int)nameScene[nameScene.Length - 1] - 49;
     }
 
     // Update is called once per frame
