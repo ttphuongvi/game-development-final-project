@@ -17,13 +17,23 @@ public class Pig : MonoBehaviour
         SeriousInjured,
     }
 
+    [HideInInspector]
+    public GameObject gameManager;
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.GetComponent<Rigidbody2D>() == null) return;
 
         float damage = col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * 100;
+
+        // Add Score
+        if (gameManager)
+            gameManager.GetComponent<IngameMenu>().currentScore += (int)damage;
+
         health -= damage;
         if (health <= 0) {
+            if (gameManager)
+                gameManager.GetComponent<IngameMenu>().currentScore += 10000;
             // animator.SetInteger("State", 2);
             this.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().GetComponent<Renderer>().enabled = false;
             GetComponent<Collider2D>().enabled = false;
@@ -44,6 +54,10 @@ public class Pig : MonoBehaviour
     {
         health = maxHeath;
         animator = GetComponent<Animator>();
+
+        
+        // Get Game Manager
+        gameManager = GameObject.Find("UIIngame");  
     }
 
     // Update is called once per frame
