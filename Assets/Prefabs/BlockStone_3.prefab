@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2026631931411372423}
   - component: {fileID: 1727585385935629345}
   - component: {fileID: 4779032169182828423}
-  - component: {fileID: 396478156432247668}
+  - component: {fileID: 2267851765076141706}
   m_Layer: 0
-  m_Name: BlockStone_1
+  m_Name: BlockStone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3967405718730191752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.696, y: -0.541, z: 0}
+  m_LocalPosition: {x: 1.254, y: -1.694, z: 0}
   m_LocalScale: {x: 1.0118, y: 0.9941, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -414597291, guid: 532f709fd57003d4e9bc0c638f62d8a0, type: 3}
+  m_Sprite: {fileID: 1612288463, guid: 532f709fd57003d4e9bc0c638f62d8a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,10 +123,10 @@ MonoBehaviour:
   maxHeath: 100
   health: 0
   spriteArray:
-  - {fileID: -414597291, guid: 532f709fd57003d4e9bc0c638f62d8a0, type: 3}
-  - {fileID: -787092573, guid: 532f709fd57003d4e9bc0c638f62d8a0, type: 3}
-  - {fileID: 413206550, guid: 532f709fd57003d4e9bc0c638f62d8a0, type: 3}
-  - {fileID: 365764108, guid: 532f709fd57003d4e9bc0c638f62d8a0, type: 3}
+  - {fileID: 1612288463, guid: 532f709fd57003d4e9bc0c638f62d8a0, type: 3}
+  - {fileID: -934884529, guid: 532f709fd57003d4e9bc0c638f62d8a0, type: 3}
+  - {fileID: 855704451, guid: 532f709fd57003d4e9bc0c638f62d8a0, type: 3}
+  - {fileID: -1677733606, guid: 532f709fd57003d4e9bc0c638f62d8a0, type: 3}
   audioClipCollision:
   - {fileID: 8300000, guid: ca8e85d507326274a871a744d7e36360, type: 3}
   - {fileID: 8300000, guid: d9870366dec16704b951a16ad95d7aed, type: 3}
@@ -148,8 +148,8 @@ MonoBehaviour:
   - {fileID: 2223121220830088689, guid: e3eaeac8fa489ca4d957767bf2bb5835, type: 3}
   - {fileID: 2223121220830088689, guid: a4a0b6eeca0787f41965d70ac125aa60, type: 3}
   distanceDetroyShape: 0.4
---- !u!60 &396478156432247668
-PolygonCollider2D:
+--- !u!58 &2267851765076141706
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -162,25 +162,5 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8, y: 0.8}
-    newSize: {x: 0.82, y: 0.82}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.40226194, y: 0.3953955}
-      - {x: -0.40165672, y: 0.19654326}
-      - {x: -0.39999998, y: -0.39999998}
-      - {x: 0.39627668, y: -0.39967746}
-      - {x: 0.39326632, y: -0.3712636}
-      - {x: 0.38383922, y: -0.35411212}
-      - {x: 0.10776728, y: -0.08081693}
-      - {x: -0.10543634, y: 0.14064822}
-      - {x: -0.2702415, y: 0.30319157}
-      - {x: -0.33710223, y: 0.3708391}
-      - {x: -0.36357188, y: 0.39539546}
+  serializedVersion: 2
+  m_Radius: 0.38
