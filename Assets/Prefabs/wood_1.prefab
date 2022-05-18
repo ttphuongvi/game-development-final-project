@@ -143,7 +143,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 72073bf6a9dee674893ff5b62c4a29cc, type: 3}
   - {fileID: 8300000, guid: 7830b8e11351d1b45b8cea4c3696c7f0, type: 3}
   audioSource: {fileID: 0}
-  shapeDetroy: []
+  shapeDetroy:
+  - {fileID: 2223121220830088689, guid: 7cbb9cb5f8fbf4c4ebc39d0cf91e197c, type: 3}
+  - {fileID: 2223121220830088689, guid: e3eaeac8fa489ca4d957767bf2bb5835, type: 3}
+  - {fileID: 2223121220830088689, guid: a4a0b6eeca0787f41965d70ac125aa60, type: 3}
   distanceDetroyShape: 0
 --- !u!60 &-7722691303670243219
 PolygonCollider2D:
