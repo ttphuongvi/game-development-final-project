@@ -8,6 +8,12 @@ public class IngameMenu : MonoBehaviour
     public VisualElement root, playState, pauseState, gameOverState;
     [HideInInspector]
     public Button btnPause, btnReturn, btnReturnPause, btnResume, btnReload;
+    [HideInInspector]
+    public Label lbScore;
+    [ShowOnly]
+    public int indexLevel;
+
+    public GameObject gameManager;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -26,6 +32,8 @@ public class IngameMenu : MonoBehaviour
 
         btnReload = root.Q<Button>("btnReload");
         btnReload.clicked += OnReloadClicked;
+
+        lbScore = root.Q<Label>("lbScore");
 
         playState = root.Q<VisualElement>("playState");
         pauseState = root.Q<VisualElement>("pauseState");
@@ -52,5 +60,18 @@ public class IngameMenu : MonoBehaviour
     void OnReturnClicked() {
         SceneManager.LoadScene("ChooseLevel");
     }
+    
+    void Start() {
+        gameManager = GameObject.FindGameObjectsWithTag("GameController")[0];
+        string nameScene = SceneManager.GetActiveScene().name;
+        indexLevel = (int)nameScene[nameScene.Length - 1] - 49;
+    }
+
+    void Update()
+    {
+        lbScore.text = gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore.ToString();
+    }
+
+
 
 }
