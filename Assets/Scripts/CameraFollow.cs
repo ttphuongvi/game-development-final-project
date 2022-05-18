@@ -27,8 +27,6 @@ public class CameraFollow : MonoBehaviour
                 //camera follows bird's x position
                 transform.position = new Vector3(x, this.transform.position.y, this.transform.position.z);
             }
-            else
-                IsFollowing = false;
         }
     }
 }
