@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         root = GetComponent<UIDocument>().rootVisualElement;
         VisualElement selectLevel = root.Q<VisualElement>("selectLevel");
         btnReturn = root.Q<Button>("btnReturn");
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
     void OnLevelClicked(int index) {
         Debug.Log(index);
         SceneManager.LoadScene("Level" + index);
+        root.style.display = DisplayStyle.None;
     }
 
     void OnReturnClicked() {
