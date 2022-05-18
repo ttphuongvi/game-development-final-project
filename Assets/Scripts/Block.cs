@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Block : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class Block : MonoBehaviour
 
     public GameObject[] shapeDetroy;
     public float distanceDetroyShape;
+
+    public GameObject gameManager;
 
     public void changeSprite(int index)
     {
@@ -41,6 +44,15 @@ public class Block : MonoBehaviour
 
         // Tính damage, detroy nếu hết máu
         float damage = col.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude * 100;
+
+        // Get Game Manager
+        gameManager = GameObject.FindGameObjectsWithTag("GameController")[0];
+        string nameScene = SceneManager.GetActiveScene().name;
+        int indexLevel = (int)nameScene[nameScene.Length - 1] - 49;
+
+        // Add Score
+        gameManager.GetComponent<GameManager>().listLevel[indexLevel].CurrentScore += (int)damage;
+
         float oldHealth = health;
         health -= damage;
         if (health <= 0) {
