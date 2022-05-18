@@ -126,7 +126,658 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Block_glass_0_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 307
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e27b9d67e54c04aa46a223cd137471
+      internalID: 264441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_1_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 306
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9206473427be04b831989e6aba82e9
+      internalID: 347931913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_2_0
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 308
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9d28af47d40384ca1a6850a21d05e7
+      internalID: -1283246147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_2_1
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 308
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6475d06b0155c694c80ae1a64096d3f6
+      internalID: 1633374214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_1_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 222
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521eb93a2583054488ce6cafdc9268af
+      internalID: -724340130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_5_3
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 233
+        width: 73
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ab2fefd1bdf3c4fad0191f948e8f0b
+      internalID: -674939924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_6_1
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 264
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5df8c46c867f04d8f6da387d9c3be5
+      internalID: -1650238918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_1_3
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 138
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d733341d1a0ab458911d6bdd69d7b3
+      internalID: -581143383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_5_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 158
+        width: 73
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b288c5093dbd11a4faf1b4bcb37bef93
+      internalID: 1430973756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_4_0
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 198
+        width: 204
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b743c91e7b669b34fbf44d14d3eeb7a5
+      internalID: -1781170602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INGAME_BLOCKS_GLASS_1_13
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 221
+        width: 42
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5136591, y: 0.47203282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e3fb12a0a64c34daa0a745d443ed57
+      internalID: 950885019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_1_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 54
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb6f826dec49e04aa54345cbad25b2e
+      internalID: -448714787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_5_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 81
+        width: 73
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05909ec04e008743b014ed603be3181
+      internalID: -1719187549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INGAME_BLOCKS_GLASS_1_16
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 46
+        width: 43
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20d455651ac8f64095a12cc88b15ac9
+      internalID: -856020201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_6_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 10
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf7f445c21a7be49906337fa0644216
+      internalID: -1388022475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_6_3
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 9
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e6481a0a25b2d43934c1a65e28964f
+      internalID: -1445656208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_5_0
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 5
+        width: 73
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de67b2aaac94344bbd6490ed11dbaa4
+      internalID: 48292453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_4_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 176
+        width: 204
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3b33824e8ecc64ab11c5b15a11f33c
+      internalID: -918390036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_4_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 154
+        width: 204
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703c650a89ef3654ab737437510ec63b
+      internalID: -1688770260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_4_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 132
+        width: 204
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9502b66164d2c4ba921b011ae06c31
+      internalID: -1401302209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: INGAME_BLOCKS_GLASS_1_4
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 221
+        width: 42
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5136591, y: 0.47203282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b802a1b7f58014d448aec120a51e1c96
+      internalID: 96015198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_3_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 266
+        width: 84
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5136591, y: 0.47203282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6c465b9e2c4f444835a17b797ae2d0
+      internalID: 2025577364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_3_0
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 266
+        width: 84
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5136591, y: 0.47203282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05513938d2352e4bb795ff1ded8871a
+      internalID: -1169293447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_3_3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 221
+        width: 84
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5136591, y: 0.47203282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51612085a1409e348b2a6833694fc86e
+      internalID: 1172549853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_3_2
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 221
+        width: 84
+        height: 41
+      alignment: 9
+      pivot: {x: 0.5136591, y: 0.47203282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47502bb8d0a42c1488798421004f0141
+      internalID: -518292807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_6_0
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 264
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50c5cf882ac1f24ab3058a81363df62
+      internalID: -445941875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_0_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 221
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6c421807ceea748813041bb3969703
+      internalID: 1855876816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_0_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beab6c6e0d6781742b1f3b5ef674ebc6
+      internalID: 1725092450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_0_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef47554f11c1b94d862a6a021db5e6c
+      internalID: 30817652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_2_2
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 309
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d1ed5d16aee854fb237e5792bcefe7
+      internalID: 366473855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Block_glass_2_03
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 309
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2a31afb48b6af4c9597d93753cb70c
+      internalID: -404854572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -137,7 +788,38 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Block_glass_0_0: 264441
+      INGAME_BLOCKS_GLASS_1_13: 950885019
+      Block_glass_3_3: 1172549853
+      Block_glass_3_1: 2025577364
+      Block_glass_2_0: -1283246147
+      Block_glass_6_2: -1388022475
+      Block_glass_2_2: 366473855
+      Block_glass_5_0: 48292453
+      Block_glass_6_1: -1650238918
+      Block_glass_4_0: -1781170602
+      Block_glass_1_3: -581143383
+      Block_glass_0_1: 1855876816
+      Block_glass_0_3: 30817652
+      Block_glass_1_1: 347931913
+      Block_glass_2_03: -404854572
+      Block_glass_4_3: -1401302209
+      Block_glass_0_2: 1725092450
+      Block_glass_4_2: -1688770260
+      Block_glass_1_0: -724340130
+      Block_glass_3_2: -518292807
+      Block_glass_5_2: 1430973756
+      Block_glass_2_1: 1633374214
+      Block_glass_3_0: -1169293447
+      Block_glass_6_0: -445941875
+      Block_glass_6_3: -1445656208
+      Block_glass_5_1: -1719187549
+      INGAME_BLOCKS_GLASS_1_16: -856020201
+      INGAME_BLOCKS_GLASS_1_4: 96015198
+      Block_glass_4_1: -918390036
+      Block_glass_1_2: -448714787
+      Block_glass_5_3: -674939924
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
