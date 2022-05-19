@@ -5,18 +5,21 @@ using UnityEngine;
 public class Yellow_bird : MonoBehaviour
 {
     // Start is called before the first frame update
-    private bool flag;
+    private bool isActiveSkill = false;
+    [HideInInspector]
+    public Animator animator;
     void Start()
     {
-        flag = true;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
-    { 
-        if(GetComponent<Bird>().State == Bird.BirdState.Thrown && Input.GetMouseButton(0) && flag)
+    {
+        if (GetComponent<Bird>().State == Bird.BirdState.Thrown && Input.GetMouseButton(0) && !isActiveSkill)
         {
             GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity * 2;
-            flag = false;
+            animator.SetBool("Active", true);
+            isActiveSkill = true;
         }
     }
 }

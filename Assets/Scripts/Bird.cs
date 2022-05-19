@@ -11,11 +11,7 @@ public class Bird : MonoBehaviour
         Injured
     }
 
-    public BirdState State
-    {
-        get;
-        private set;
-    }
+    public BirdState State;
 
     // bird can move
     public bool canMove = false;
@@ -35,7 +31,7 @@ public class Bird : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (State == BirdState.Thrown && GetComponent<Rigidbody2D>().velocity.sqrMagnitude <= MinVelocity)
+        if ((State == BirdState.Injured) && GetComponent<Rigidbody2D>().velocity.sqrMagnitude <= MinVelocity)
         {
             //destroy the bird after 2 seconds
             Destroy(gameObject, 3);
@@ -48,6 +44,16 @@ public class Bird : MonoBehaviour
         if (animator)
             animator.SetInteger("State", 1);
         State = BirdState.Thrown;
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.GetComponent<Rigidbody2D>() == null || col.gameObject.GetComponent<Rigidbody2D>().isKinematic) return;
+        if (State == BirdState.Thrown)
+        {
+            animator.SetInteger("State", 2);
+            State = BirdState.Injured;
+        }
     }
 
 }

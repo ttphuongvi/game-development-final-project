@@ -5,14 +5,15 @@ using UnityEngine;
 public class Level
 {
 
-    public Level(int numLevel) {
+    public Level(int numLevel)
+    {
         HighScore = 0;
         CurrentScore = 0;
         Unlocked = (numLevel == 1 ? true : false);
         OneStarReq = 10000;
         TwoStarReq = 20000;
         ThreeStarReq = 30000;
-        numLevel = numLevel;
+        this.numLevel = numLevel;
         Debug.Log("Level " + numLevel + " created");
         Defeated = false;
     }
@@ -25,15 +26,15 @@ public class Level
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public int numLevel;
     public int HighScore, CurrentScore;
     public bool Unlocked;
-    public  int OneStarReq, TwoStarReq, ThreeStarReq;
+    public int OneStarReq, TwoStarReq, ThreeStarReq;
 
     public bool Defeated;
-    
+
     public bool CurrentDefeated
     {
         get

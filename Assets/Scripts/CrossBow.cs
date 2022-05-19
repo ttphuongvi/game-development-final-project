@@ -148,7 +148,7 @@ public class CrossBow : MonoBehaviour
             {
                 break;
             }
-            
+
         }
 
         TrajectoryLineRenderer.positionCount = segmentCount;
