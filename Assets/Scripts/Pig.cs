@@ -6,7 +6,8 @@ public class Pig : MonoBehaviour
 {
     public float maxHeath = 100;
     
-    [ShowOnly] public float health;
+    [ShowOnly]
+    public float health;
 
     [HideInInspector]
     public Animator animator;

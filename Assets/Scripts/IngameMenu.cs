@@ -54,10 +54,12 @@ public class IngameMenu : MonoBehaviour
 
     void OnReloadClicked() {
         // TODO
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     void OnReturnClicked() {
+        Time.timeScale = 1;
         SceneManager.LoadScene("ChooseLevel");
     }
     
