@@ -20,6 +20,8 @@ public class Bird : MonoBehaviour
 
     [HideInInspector]
     public Animator animator;
+    public GameObject[] birdFeather;
+    public int[] numberFeather;
 
 
     void Start()
@@ -53,6 +55,16 @@ public class Bird : MonoBehaviour
         {
             animator.SetInteger("State", 2);
             State = BirdState.Injured;
+        }
+        for (int index = 0; index < birdFeather.Length; ++index)
+        {
+
+            Debug.Log(numberFeather[index]);
+            for (int numShape = 0; numShape < numberFeather[index]; ++numShape)
+            {
+                Debug.Log("Instance feather");
+                GameObject newShape = Instantiate(birdFeather[index], transform.position, Quaternion.identity);
+            }
         }
     }
 
